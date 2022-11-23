@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+
+      <div id="main_container">
+          <div id="sidebar">
+
+            <p class="pic tilt">
+                <img id="cat" src="img/cat.jpg" width="200" height="200" alt="cat" />
+            </p>
+
+            <p class="pic tilt">
+                <img id="dog" src="img/dog.jpg" width="200" height="200" alt="dog" />
+
+            </p>
+
+
+        </div>
+          <div id="content-container">
+
+              <div id="gameFrame">
+                  <div id="game_board"></div>
+                  <div class="cl-overlay"></div>
+                  <button id="btnScramble" class="myButton">开始</button>
+              </div>
+
+
+
+          </div>
+
+
+
+              <div id="about">
+              <h4>----------------自动解题------------</h4>
+                  <input type="button" value="输出解题文件" id="out"/>
+                  <input type="button" value="运用A*算法自动求解" id="solve"/>
+
+
+
+          </div>
+      </div>
+
+
+    <script src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/solver.js"></script>
+    <script type="text/javascript" src="js/slidepuzzle.js"></script>
+    <script type="text/javascript" src="js/overlay.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/output.js"></script>
+</body>
+</html>
